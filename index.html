@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px 35px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #2575fc;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6a11cb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Details</h2>
+
+        <form>
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Register Number</label>
+            <input type="text" placeholder="Enter register number" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Department</label>
+            <select>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>AI & DS</option>
+                <option>ECE</option>
+            </select>
+
+            <label>Year</label>
+            <select>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
